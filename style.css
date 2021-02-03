@@ -5,6 +5,7 @@
 }
 body {
 	background: #aed6f1;
+	max-width: 1440px;
 	font-family: 'Muli', Arial, sans-erif;
 	display: flex;
 	flex-direction: column;
@@ -79,6 +80,13 @@ select:focus, input:focus, button:focus {
 
 @media screen and (max-width: 767px) {
 	.container {
-		width: 60vh;
+		width: 70vh;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.container {
+		width: 100vh;
+		height: calc(100vh - 112px);
 	}
 }
