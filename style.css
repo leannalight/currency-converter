@@ -1,22 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
-* {
-	box-sizing: border-box;
-}
 body {
 	background: #aed6f1;
-	max-width: 1440px;
 	font-family: 'Muli', Arial, sans-erif;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-    height: 100vh;
 	margin: 0;
+	height: 100vh;
 }
 
 h3 {
-	font-size: 24px;
+	font-size: 1.5rem;
 	align-items: center;
 	margin: 18px 0 25px 20px;
 }
@@ -24,14 +20,17 @@ h3 {
 span {
 	color: rgba(255, 166, 0, 0.87);
 	padding: 5px 0 5px 20px;
-	font-size: 19px;
+	font-size: 1.2rem;
 }
 
 .container {
-	width: 430px;
+	width: 34%;
+	height: auto;
 	background-color: #ecf0f1;
   	border-radius: 10px;
 	padding: 9px;
+	align-items: center;
+	justify-content: center;
 }
 
 .currency {
@@ -50,7 +49,7 @@ span {
     background-size: .50em auto, 100%;
 	border: 0;
 	padding-right: 20px;
-	font-size: 23px;
+	font-size: 1.4rem;
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -58,7 +57,7 @@ span {
 .currency input {
 	border: 0;
 	background: transparent;
-	font-size: 23px;
+	font-size: 1.4rem;
 	text-align: right;
 	margin: 0;
 	padding: 0;
@@ -70,7 +69,7 @@ span {
 
 label {
 	font-family: 'Arial';
-	font-size: 23px;
+	font-size: 1.4rem;
 	padding-right: 20px;
 }
 
@@ -78,15 +77,30 @@ select:focus, input:focus, button:focus {
 	outline: 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
 	.container {
-		width: 70vh;
+		width: 70%;
 	}
-}
+	h3 {
+		font-size: 2.5rem;
+		margin: 40px 0 60px 20px;
+	}
+	.currency {
+		margin-top: 25px;
+		margin-bottom: 30px;
+	}
 
-@media screen and (max-width: 425px) {
-	.container {
-		width: 100vh;
-		height: calc(100vh - 112px);
+	.currency select {
+		padding-right: 40px;
+	}
+	
+	select, input, label {
+		font-size: 2.2rem;
+	}
+	span {
+		font-size: 1.5rem;
+	}
+	#from_ammount, #to_ammount, #to_currency {
+		font-size: 2.2rem;
 	}
 }
